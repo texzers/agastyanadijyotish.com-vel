@@ -659,3 +659,209 @@ img {
 @media (min-width: 769px) {
   .sticky-cta-bar { display: none !important; }
 }
+
+/* ==========================================================================
+   EXACT HERO SECTION DESIGN (MATCHING PROMPT IMAGE)
+   ========================================================================== */
+
+.sage-logo-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #EAB308;
+}
+
+.btn-gold-nav {
+  background: linear-gradient(135deg, #FDE047 0%, #EAB308 100%);
+  color: #1C1917 !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.3);
+  border: 1px solid #FEF08A;
+}
+.btn-gold-nav:hover {
+  background: linear-gradient(135deg, #FEF08A 0%, #CA8A04 100%);
+}
+
+.exact-hero {
+  position: relative;
+  min-height: 560px;
+  background: url('../images/exact-hero-bg.jpg') center top / cover no-repeat;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exact-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, rgba(12, 10, 9, 0.92) 0%, rgba(12, 10, 9, 0.75) 45%, rgba(12, 10, 9, 0.2) 100%);
+  z-index: 1;
+}
+
+.exact-hero-container {
+  position: relative;
+  z-index: 2;
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.exact-hero-content {
+  max-width: 620px;
+}
+
+.subtitle-tag {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #D6D3D1;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.subtitle-tag::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: #EAB308;
+}
+
+.exact-hero-title {
+  font-family: var(--font-serif-sub);
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.exact-hero-title span {
+  color: #FDE047;
+}
+
+.exact-hero-desc {
+  font-size: 1.1rem;
+  color: #E7E5E4;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.exact-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.btn-exact-gold {
+  background: linear-gradient(135deg, #FDE047 0%, #EAB308 100%);
+  color: #1C1917 !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(234, 179, 8, 0.4);
+  border: 1px solid #FEF08A;
+}
+.btn-exact-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(234, 179, 8, 0.5);
+}
+
+.btn-exact-circle {
+  background: rgba(28, 25, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.btn-exact-circle:hover {
+  background: rgba(28, 25, 23, 0.85);
+  border-color: #EAB308;
+  color: #FDE047 !important;
+}
+
+.play-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  font-size: 0.75rem;
+  padding-left: 2px;
+}
+
+/* EXACT BOTTOM FEATURE BAR MATCHING IMAGE */
+.exact-bottom-bar {
+  position: relative;
+  z-index: 2;
+  background: rgba(12, 10, 9, 0.85);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(234, 179, 8, 0.3);
+  padding: 1rem 0;
+}
+
+.exact-bottom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  color: #FDE047;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.feature-text strong {
+  font-size: 0.95rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.feature-text span {
+  font-size: 0.8rem;
+  color: #A8A29E;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 992px) {
+  .exact-hero-title { font-size: 2.6rem; }
+  .feature-divider { display: none; }
+  .exact-bottom-flex { justify-content: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+}
+
